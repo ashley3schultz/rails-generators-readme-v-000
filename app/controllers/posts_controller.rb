@@ -13,6 +13,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.create(params.require(:post))
+    binding.pry
     redirect_to post_path(@post)
   end
 
