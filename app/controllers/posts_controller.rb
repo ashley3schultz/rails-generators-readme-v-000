@@ -9,10 +9,10 @@ class PostsController < ApplicationController
 
   def new
   	@post = Post.new
+    binding.pry
   end
 
   def create
-    binding.pry
     @post = Post.new(params)
     @post.save
     redirect_to post_path(@post)
