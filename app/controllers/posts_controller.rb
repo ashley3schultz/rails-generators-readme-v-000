@@ -1,10 +1,10 @@
 class PostsController < ApplicationController
   def index
   	@posts = Post.all
-    binding.pry
   end
 
   def show
+    binding.pry
   	@post = Post.find(params[:id])
   end
 
