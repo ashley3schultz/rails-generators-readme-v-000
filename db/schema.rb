@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(version: 20180628035512) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "category_id"
-    t.string   "post_status"
   end
 
 end
