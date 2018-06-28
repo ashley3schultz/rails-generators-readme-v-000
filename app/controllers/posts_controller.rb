@@ -9,7 +9,6 @@ class PostsController < ApplicationController
 
   def new
   	@post = Post.new
-    binding.pry
   end
 
   def create
@@ -25,6 +24,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    binding.pry
     @post = Post.find(params[:id])
   end
 end
