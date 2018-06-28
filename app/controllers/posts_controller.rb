@@ -4,7 +4,6 @@ class PostsController < ApplicationController
   end
 
   def show
-    binding.pry
   	@post = Post.find(params[:id])
   end
 
@@ -13,6 +12,7 @@ class PostsController < ApplicationController
   end
 
   def create
+    binding.pry
     @post = Post.new(params)
     @post.save
     redirect_to post_path(@post)
